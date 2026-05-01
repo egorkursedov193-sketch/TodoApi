@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Список задач</title>
+    <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+    <h1>Список задач</h1>
+
+    <div id="addTodo">
+        <h2>Добавить новую задачу</h2>
+        <input type="text" id="add-name" placeholder="Новая задача">
+        <button id="add-button">Добавить</button>
+    </div>
+
+    <div id="todos">
+        <h2>Список задач</h2>
+        <table>
+            <tr>
+                <th>Название</th>
+                <th>Выполнено</th>
+                <th>Действия</th>
+            </tr>
+            <tbody id="todos-list"></tbody>
+        </table>
+    </div>
+
+    <div id="editTodo" style="display: none">
+        <h2>Редактировать задачу</h2>
+        <input type="hidden" id="edit-id">
+        <input type="text" id="edit-name">
+        <input type="checkbox" id="edit-isComplete">
+        <label for="edit-isComplete">Выполнено</label>
+        <button id="save-button">Сохранить</button>
+        <button id="cancel-button">Отмена</button>
+    </div>
+
+    <script src="js/site.js"></script>
+</body>
+</html>
